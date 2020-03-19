@@ -11,7 +11,10 @@ __author__ = 'Henry'
 '''
 
 import requests, re
-
+# 输出日期
+from datetime import date
+today = str(date.today())
+print(today)
 
 def signin():
     print('*' * 30 + '百度贴吧签到小助手' + '*' * 30)
