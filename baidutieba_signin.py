@@ -44,6 +44,16 @@ def signin():
             num += 1
     print('\n')
     print('恭喜您,贴吧签到成功!一共签到' + str(num) + '个贴吧!')
+    
+    # 添加将签到结果发送到微信的功能
+    # 默认情况下不开启，需要到 iyuu.cn 获取 token 才能使用。
+    # 将 token 替换掉下方的 xxxx ，然后下面三行的 # 去掉，就可以开启功能。
+    
+    
+    #report = {'text':'签到了 '+ str(num) + '个贴吧'}
+    #wx = requests.get('https://iyuu.cn/IYUUxxxx.send',params=report)
+    #print(wx)
+
 
 
 if __name__ == '__main__':
